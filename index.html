@@ -3,6 +3,23 @@
 	<head>
 
 	<title> Elegant Layers </title>
+	<script>
+		
+		function validate(){
+			var name = document.getElementById("name").value
+				if(name1.lenght<2){
+					text= "Enter correct name";
+					error_message.innerHTML=text;
+					return false;
+				}
+			var adress = document.getElementById("adress").value
+			var product = document.getElementById("product").value
+			var pay = document.getElementById("pay").value
+			
+		}
+		
+	</script>
+		
 	</head>
 	
 	<body bgcolor= "#ffbfe3" topmargin="50" leftmargin="55" align= "left">
@@ -19,13 +36,13 @@
 		<br>
 		<br>
 		<form name = "elegant_layers" method = "post" action = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSexggLHuNpQM6DyjkVwou3uquly9Iz10MJmIjQ2vZv5JW-6WA/formResponse">
-		Please Enter Your Full Name <input type = "text" name = "entry.476485784">
+		Please Enter Your Full Name <input id = "name" type = "text" name = "entry.476485784">
 		<br>
 		<br>
-		Please Enter Your Address <input type = "paragraph" name = "entry. 1876390676">
+		Please Enter Your Address <input id = "paragraph" type = "paragraph" name = "entry. 1876390676">
 		<br>
 		<br>
-		<h3> Please Select Your Products </h3> <name = "entry. 2137540846">
+		<h3> Please Select Your Products </h3> <id = "product" name = "entry. 2137540846">
 		<font color = "blue">
 		<p>
 			1st Row(left to right): Gemstone Gallery - $70 ; Delicate Gems - $65 ; Bling - $125
@@ -103,7 +120,7 @@
 
 		
 		<h3> How would you like to pay??
-		</h3> <name = "entry. 2137540846">
+		</h3> < id = "pay" name = "entry. 2137540846">
 		Cash on Delivery 
 		<input type = "radio" name = "pay">
 		<br>
